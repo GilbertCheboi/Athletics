@@ -12,7 +12,7 @@ from rest_framework.decorators import api_view, authentication_classes, permissi
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.response import Response
-from ..models import Profile, Formula1
+from ..models import Profile, Academics, Training
 from rest_framework.views import APIView
 from ..serializers import ProfileSerializer, PublicProfileSerializer
 User = get_user_model()
