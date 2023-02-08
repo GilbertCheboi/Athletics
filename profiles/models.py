@@ -22,7 +22,7 @@ class Profile(models.Model):
     First_Name = models.TextField(blank=True, null=True)
     Last_Name = models.TextField(blank=True, null=True)
     bio = models.TextField(blank=True, null=True)
-    premium = models.BooleanField('default'=False)
+    premium = models.BooleanField(default=False)
     age = models.TextField(blank=True, null=True)
     height = models.TextField(blank=True, null=True)
     weight = models.TextField(blank=True, null=True)
