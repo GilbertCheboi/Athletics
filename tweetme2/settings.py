@@ -120,21 +120,22 @@ WSGI_APPLICATION = 'tweetme2.wsgi.application'
 #         'OPTIONS':{"sslmode":"require"}
 #     }
 # }
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'mydatabase',
-    }
-}
 # DATABASES = {
 #     'default': {
-#         'ENGINE':'django.db.backends.postgresql',
-#         'NAME':'django',
-#         'USER':'Gillykim',
-#         'PASSWORD':'30230192Gilly!',
-#         'HOST':'localhost'
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': 'mydatabase',
 #     }
 # }
+DATABASES = {
+    'default': {
+        'ENGINE':'django.db.backends.postgresql',
+        'NAME':'dbname',
+        'USER':'dbuser',
+        'PASSWORD':'30230192Gilly!',
+        'HOST':'localhost',
+        'PORT': '5432'
+    }
+}
 
 #AUTH_USER_MODEL = 'accounts.User'
 
