@@ -30,7 +30,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.25.107', '127.0.0.1','gilscore.azurewebsites.net', '172.31.26.131', '.cfe.sh', 'localhost']
+ALLOWED_HOSTS = ['192.168.25.107', '127.0.0.1','gilscore.azurewebsites.net', '172.31.26.131', '45.76.54.27', '.cfe.sh', 'localhost']
 CSRF_TRUSTED_ORIGINS = ['https://gilscore.azurewebsites.net']
 
 #ALLOWED_HOSTS = ['SportsApp.eba-h3jtbm88.us-west-2.elasticbeanstalk.com']
@@ -56,17 +56,9 @@ INSTALLED_APPS = [
     # internal
     'accounts',
     'profiles',
-    'tweets',
-    'NBA',
-    'NFL',
-    'Laliga',
-    'Bundesliga',
-    'Worldcup',
-    'Afcon',
     'Baseball',
     'Europa',
     'Formula1',
-    'Champions',
     # media/static storage
     'storages',
     'django_extensions',
@@ -106,26 +98,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'tweetme2.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'django',
-#         'USER': 'Gillykim',
-#         'PASSWORD': os.getenv("DB_PASSWORD"),
-#         'HOST': 'bongasport.postgres.database.azure.com',
-#         'PORT': '',
-#         'OPTIONS':{"sslmode":"require"}
-#     }
-# }
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': 'mydatabase',
-#     }
-# }
 DATABASES = {
     'default': {
         'ENGINE':'django.db.backends.postgresql',

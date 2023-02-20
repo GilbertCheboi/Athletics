@@ -60,9 +60,12 @@ class TweetManager(models.Manager):
 class Tweet(models.Model):
     # Maps to SQL data
     # id = models.AutoField(primary_key=True)
-    parent = models.ForeignKey("self", null=True, on_delete=models.SET_NULL)
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="Formula1tweets") # many users can many tweets
-    likes = models.ManyToManyField(User, related_name='Formula1tweet_user', blank=True, through=Formula1TweetLike)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="Formula1tweets")
+    title = models.TextField(blank=True, null=True)
+    description = models.TextField(blank=True, null=True)
+    location = models.TextField(blank=True, null=True)
+    altitude = models.TextField(blank=True, null=True)
+    date = models.TextField(blank=True, null=True)
     content = models.TextField(blank=True, null=True)
     video = models.FileField(upload_to='videos/', blank=True, null=True)
     image = models.ImageField(upload_to='images/', blank=True, null=True)
