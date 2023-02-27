@@ -191,7 +191,7 @@ REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': DEFAULT_RENDERER_CLASSES,
 }
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'media')
-#MEDIA_URL = '/media/'
+MEDIA_URL = '/media/'
 
 
 
